@@ -5,16 +5,12 @@ X = int(input("ingrese un numero de X: "))
 Y = int(input("ingrese el numero de Y: "))
 
 # processing
-
-if X > Y:
-    msj = " es mayor que "
-
-elif X < Y:
-    msj = " es menor que "
-
+if X == Y:
+    # output
+    print("los numeros son iguales...")
 else:
-    msj = " es igual a "
-
-# output
-
-print("EL NUMERO: " + str(X) + msj + str(Y))
+    if X > Y:
+        mayor = X
+    else:
+            mayor = Y
+    print("el mayor entre: " + str(X) + " y " + str(Y) + " es " + str(mayor))
